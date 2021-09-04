@@ -3,10 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Générateur de mot de passe avec Django</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   </head>
   <body>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#button').click(function() {
+              checked = $("input[type=checkbox]:checked").length;
+        
+              if(!checked) {
+                alert("Vous devez sélectionner au moins un choix");
+                return false;
+              }
+        
+            });
+        });
+    </script>
+
     {% load static %}
+
     <link rel="stylesheet" type="text/css" href="{% static 'app/style.css' %}">
+    
     <div class="centrer">
         <fieldset>
             <legend class="legend">Générateur de mots de passe avec Django</legend>
