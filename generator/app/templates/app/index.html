@@ -11,12 +11,10 @@
         $(document).ready(function () {
             $('#button').click(function() {
               checked = $("input[type=checkbox]:checked").length;
-        
               if(!checked) {
-                alert("Vous devez sélectionner au moins un choix");
+                alert("Veuillez sélectionner au moins une case");
                 return false;
               }
-        
             });
         });
     </script>
@@ -24,7 +22,7 @@
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'app/style.css' %}">
-    
+
     <div class="centrer">
         <fieldset>
             <legend class="legend">Générateur de mots de passe avec Django</legend>
