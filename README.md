@@ -30,21 +30,33 @@ Un **générateur de mots de passe complexes** qui prend en compte, selon le cho
 
 #### Règle n°5 : renouvellement des mots de passe
 > Sur les sites où vous avez stocké des données sensibles, pensez à changer votre mot de passe régulièrement : tous les 3 mois parait être une fréquence raisonnable.
-> 
+
+---
 
 # Installation
 
-#### Cloner le projet depuis Github :
+#### Cloner le projet :
 ```
 git clone https://github.com/umut-dag/Projet07-Django-Generateur-de-mots-de-passe.git
 ```
-#### Sur votre ordinateur :
+
+#### Il est conseillé de travailler dans un environnement virtuel :
+```
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+#### Installation des dépendances :
 ```
 pip install -r requirements.txt
 ```
+
+#### Initialisation de l'application :
 ```
 python manage.py migrate
 ```
+
+#### Lancement du serveur :
 ```
 python manage.py runserver
 ```
