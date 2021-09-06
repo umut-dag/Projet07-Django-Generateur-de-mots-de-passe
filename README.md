@@ -1,18 +1,19 @@
 
 ## Introduction
-Un **générateur de mots de passe complexes** qui prend en compte, selon le choix de l'utilisateur, les lettres majuscules, minuscules, les chiffres et les caractères spéciaux.
+Un **générateur de mots de passe complexes** qui prend en compte, selon le choix de l'utilisateur, les lettres majuscules, minuscules, les chiffres et les caractères spéciaux.</br></br>
 
 ##  Langages de programmation
-- L'application a été développée en *Python* via *Django* avec frontEnd *HTML/CSS/JQuery*
+- L'application a été développée en *Python* via *Django* avec frontEnd *HTML/CSS/JQuery*</br></br>
 
 
-## Capture d'écran
+## Captures d'écran
 <img src="https://raw.githubusercontent.com/umut-dag/Projet07-Django-Generateur-de-mots-de-passe/main/screenshots/2021-09-04_042436.jpg" alt="Capture d'écran"/>
 
 <img src="https://raw.githubusercontent.com/umut-dag/Projet07-Django-Generateur-de-mots-de-passe/main/screenshots/2021-09-04_042449.jpg" alt="Capture d'écran"/>
 
 <img src="https://raw.githubusercontent.com/umut-dag/Projet07-Django-Generateur-de-mots-de-passe/main/screenshots/2021-09-04_042727.jpg" alt="Capture d'écran"/>
 
+</br>
 
 ## Les règles à respecter pour créer un bon mot de passe
 
@@ -31,7 +32,9 @@ Un **générateur de mots de passe complexes** qui prend en compte, selon le cho
 #### Règle n°5 : renouvellement des mots de passe
 > Sur les sites où vous avez stocké des données sensibles, pensez à changer votre mot de passe régulièrement : tous les 3 mois parait être une fréquence raisonnable.
 
+
 ---
+
 
 # Installation
 
@@ -51,7 +54,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-#### Initialisation de l'application :
+#### Création des tables dans la base de données :
 ```
 python manage.py migrate
 ```
@@ -61,19 +64,9 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-
 # Emulation
 
-### Sur votre navigateur préféré
-
-#### Page principale :
+#### Entrer l'adresse suivante dans la barre d'adresse de votre navigateur Web :
 ```
 http://localhost:8000/
-```
-
-####  Accéder à la page d'administration :
-```
-http://localhost:8000/admin/
-Login = admin
-Password = 123456
 ```
